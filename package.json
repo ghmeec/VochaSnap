@@ -1,0 +1,26 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.TextDetector",
+    "tns-android": {
+      "version": "6.1.2"
+    },
+    "tns-ios": {
+      "version": "6.1.0"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "nativescript-camera": "^4.5.0",
+    "nativescript-phone": "^1.4.1",
+    "nativescript-plugin-firebase": "^10.1.0",
+    "nativescript-theme-core": "~1.0.6",
+    "tns-core-modules": "~6.1.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-webpack": "~1.2.0"
+  },
+  "gitHead": "1964ea9e8ca1a0518e0d6370781eedcf6c23db42",
+  "readme": "NativeScript Application"
+}

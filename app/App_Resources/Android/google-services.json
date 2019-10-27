@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1092090054069",
+    "firebase_url": "https://uqsapp.firebaseio.com",
+    "project_id": "uqsapp",
+    "storage_bucket": "uqsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092090054069:android:2e8787dee59475ab6e45fc",
+        "android_client_info": {
+          "package_name": "org.nativescript.TextDetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092090054069-b9m549uquqsnbhvb0mvg9l3j149i4blr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGG5DAkGeHJF6idG2dXDKqYCxeUzT0JmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092090054069-b9m549uquqsnbhvb0mvg9l3j149i4blr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
