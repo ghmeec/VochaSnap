@@ -11,11 +11,9 @@ const Observable = require("tns-core-modules/data/observable").Observable;
 const fileSystemModule = require("tns-core-modules/file-system");
 var phone = require( "nativescript-phone" );
 
-
 const HomeViewModel = require("./home-view-model");
 
 const vm = new Observable();
-
 
 function onNavigatingTo(args) {
     const page = args.object;
@@ -24,27 +22,29 @@ function onNavigatingTo(args) {
     vm.set("vocha", "0000 0000 0000");
     page.bindingContext = vm;
 
-    firebase.init({
-        // Optionally pass in properties for database, authentication and cloud messaging,
-        // see their respective docs.
-    }).then(
-        function () {
-            console.log("firebase.init done");
-        },
-        function (error) {
-            console.log("firebase.init error: " + error);
-        }
-    );
+    // firebase.init({
+    //     // Optionally pass in properties for database, authentication and cloud messaging,
+    //     // see their respective docs.
+    // }).then(
+    //     function () {
+    //         console.log("firebase.init done");
+    //     },
+    //     function (error) {
+    //         console.log("firebase.init error: " + error);
+    //     }
+    // );
 
 
 }
 
 function onTextRecognitionResult(){
+    vm.set("results","");
+    vm.set("vocha", "0000 0000 0000 00");
     
-   camera.takePicture()   
+    camera.takePicture()   
     .then(function (imageAsset) {
         new ImageSource().fromAsset(imageAsset).then(imageSource => {
-       
+
             const fileToDelete = imageAsset._android
             const file2 = fileSystemModule.File.fromPath(fileToDelete)
 
@@ -68,8 +68,8 @@ function onTextRecognitionResult(){
                 console.log("Here are lines",lines)
                 for(var line of lines) {
                     vochaNumber=line.replace(/ /g,'')
-                    console.log("Noew results : ",vochaNumber*1)
-                    if((!(isNaN(vochaNumber*1)))&&(vochaNumber.length>=12)){
+                    console.log("Noew results : ",vochaNumber*1," : ", vochaNumber.length)
+                    if((!(isNaN(vochaNumber*1)))&&(vochaNumber.length>=12)&&(vochaNumber.length<=15)){
                         vochaNumber=vochaNumber.replace(/ /g,'')
                         vochaNumber=vochaNumber
                         vm.set("results",lines);
