@@ -2,7 +2,7 @@
 
 Adding redit has never been easier
 
-## 🚀Getting started
+## Getting started
 
 Yarn/NPM is required.
 
@@ -27,12 +27,6 @@ yarn run
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-```bash
-$ vendor/bin/phpunit
-```
 
 ## Contributing
 
