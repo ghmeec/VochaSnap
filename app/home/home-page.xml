@@ -4,24 +4,52 @@
    
     >
 
-    <ActionBar class="action-bar" style="background-color:#1e656d;" flat="true" >
-        <Label class="action-bar-title" text="Easy Top Up - ML" style="color:#eee;font-family:Helvetica;font-size:22px"></Label>
+    <ActionBar flat="true"  class="backGroundPrimary" >
+        <Label  text="Vocha Snap" class="actionBarTitle"></Label>
     </ActionBar>
 
-    <StackLayout style="padding:15;" orientation="vertical" horizontalAlignment="center" verticalAlignment="center">
-        <StackLayout   style="margin-bottom:10;margin-top:10">
-            <Label text="In simple Few Steps, Scan Your Top Up Card, And you are ready to go" textWrap="true" style="color:#38300A;text-align:center;font-family:Helvetica;font-size:16px"/> 
-        </StackLayout>
-        <StackLayout   style="margin-bottom:10;margin-top:10"> 
-            <Button text="Scan" tap="onTap" style="background-color:#1e656d;color:#FFFFFF;font-family:Helvetica"></Button>
-        </StackLayout>
+    <BottomNavigation >
+    <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+    <TabStrip style="background-color:white;">
+        <TabStripItem>
+            <Label text="Home" style="font-size:14px"></Label>
+            <Label text="&#xf015;" class="fas" style="font-size:22px"></Label>
+            <!-- <Image src="font://&#xf015;" stretch="none" class="fas" style="font-size:10px"></Image> -->
+        </TabStripItem>
+        <TabStripItem class="special">
+            <Label text="Other" style="font-size:14px"></Label>
+            <Label text="&#xf1da;" class="fas" style="font-size:22px"></Label>
+            <!-- <Image src="font://&#xf1da;" stretch="none" class="fas" style="font-size:15px"></Image> -->
+        </TabStripItem>
+    </TabStrip>
 
-        <StackLayout   style="margin-bottom:10;margin-top:10">
-            <Label text="{{results}}" textWrap="true" style="color:#768591;text-align:center;font-family:Helvetica"/>
-        </StackLayout>
+    <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+    <TabContentItem>
+        <GridLayout>
+            <StackLayout style="padding:15;" orientation="vertical" horizontalAlignment="center" verticalAlignment="center">
+            <StackLayout   style="margin-bottom:10;margin-top:10">
+                <Label text="In simple Few Steps, Scan Your Top Up Card, And you are ready to go" textWrap="true" class="labels"/> 
+            </StackLayout>
+            <StackLayout   style="margin-bottom:10;margin-top:10"> 
+                <Button text="Scan" tap="onTap" class="button"></Button>
+            </StackLayout>
 
-        <StackLayout  style="margin-top:10;">
-            <Label text="{{vocha}}"  textWrap="true" style="color:#f62a00;text-align:center;font-family:Helvetica"/>
+            <StackLayout   style="margin-bottom:10;margin-top:10">
+                <Label text="{{results}}" textWrap="true"  class="labels"/>
+            </StackLayout>
+
+            <StackLayout  style="margin-top:10;">
+                <Label text="{{vocha}}"  textWrap="true" class="vochaNumber"/>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+        </GridLayout>
+    </TabContentItem>
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Extra feature to a separate tabs" class="h3 text-center"></Label>
+        </GridLayout>
+    </TabContentItem>
+    </BottomNavigation>
+
+  
 </Page>
