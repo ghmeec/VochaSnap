@@ -6,6 +6,9 @@ Adding redit has never been easier
 
 Yarn/NPM is required.
 
+#### Quick Setup Instructions (Optional if you already set up android sdk with android studio, or installed xcode already)
+Environemtal Set up [https://docs.nativescript.org/start/quick-setup ](https://github.com/ghmeec/)
+
 #### Installation
 
 - Fork & Clone then,
@@ -14,15 +17,19 @@ Yarn/NPM is required.
 git clone https://github.com/ghmeec/VochaSnap.git
 
 cd VochaSnap
-
-yarn install
+npm install -g nativescript
+npm install
 ```
 
 - Run
 
 ```bash
-yarn run
+tns run android
+tns run ios
 ```
+
+#### Quick Setup Instructions (Optional if you already set up android sdk with android studio, or installed xcode already)
+Environemtal Set up [https://docs.nativescript.org/start/quick-setup ](https://github.com/ghmeec/)
 
 ## Changelog
 
@@ -38,7 +45,7 @@ If you discover any security related issues, please email [hello@alphaolomi.com]
 
 ## Credits
 
-- **George M** [@ghmeec](https://github.com/ghmeec/)
+- **George Millanzi** [@ghmeec](https://github.com/ghmeec/)
 - **Alpha Olomi** [@alphaolomi](https://github.com/alphaolomi/)
 - [All Contributors][link-contributors]
 
