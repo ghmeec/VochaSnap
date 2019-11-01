@@ -14,7 +14,7 @@ Environemtal Set up [Instructions ](https://docs.nativescript.org/start/quick-se
 - Fork & Clone then,
 
 ```bash
-git clone https://github.com/ghmeec/VochaSnap.gits
+git clone https://github.com/ghmeec/VochaSnap.git
 
 cd VochaSnap
 npm install -g nativescript
