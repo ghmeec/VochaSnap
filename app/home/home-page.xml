@@ -18,7 +18,7 @@
         </TabStripItem>
         <TabStripItem class="special">
             <Label text="Other" style="font-size:14px"></Label>
-            <Label text="&#xf1da;" class="fas" style="font-size:22px"></Label>
+            <Label text="&#xf7c4;" class="fas" style="font-size:22px"></Label>
             <!-- <Image src="font://&#xf1da;" stretch="none" class="fas" style="font-size:15px"></Image> -->
         </TabStripItem>
     </TabStrip>
@@ -47,6 +47,52 @@
     <TabContentItem>
         <GridLayout>
             <Label text="Extra feature to a separate tabs" class="h3 text-center"></Label>
+            <TabView 
+                id="tabViewContainer" 
+                style="tab-background-color:#1e656d;tab-text-color:#dddddd;
+                selected-tab-text-color:#ffffff;
+                android-selected-tab-highlight-color:#ffffff;
+                "
+                
+            >
+            <TabViewItem title="General"  >
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+            <TabViewItem title="Airtel">
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+             <TabViewItem title="Halotel">
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+             <TabViewItem title="Tigo">
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+             <TabViewItem title="TTCL">
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+             <TabViewItem title="Vodacom">
+                <StackLayout>
+                   <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+
+            <TabViewItem title="Zantel">
+                <StackLayout>
+                    <!-- tab content here -->
+                </StackLayout>
+            </TabViewItem>
+        </TabView>
+
         </GridLayout>
     </TabContentItem>
     </BottomNavigation>
