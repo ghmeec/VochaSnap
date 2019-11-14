@@ -6,8 +6,11 @@ Adding redit has never been easier
 
 Yarn/NPM is required.
 
+## Used UI widgets
+List of all ui components to play with here [Here](https://docs.nativescript.org/ui/overview)
+
 #### Quick Setup Instructions (Optional if you already set up android sdk with android studio, or installed xcode already)
-Environemtal Set up [https://docs.nativescript.org/start/quick-setup ](https://github.com/ghmeec/)
+Environemtal Set up [Instructions ](https://docs.nativescript.org/start/quick-setup)
 
 #### Installation
 
@@ -28,8 +31,6 @@ tns run android
 tns run ios
 ```
 
-#### Quick Setup Instructions (Optional if you already set up android sdk with android studio, or installed xcode already)
-Environemtal Set up [https://docs.nativescript.org/start/quick-setup ](https://github.com/ghmeec/)
 
 ## Changelog
 

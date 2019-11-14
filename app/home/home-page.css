@@ -1,0 +1,37 @@
+/*  My css naming conventions are horrible these can be updated
+    in home-page.css and in home-page.xml 
+
+*/
+
+.actionBar{
+
+}
+
+.actionBarTitle{
+    color:#eee;
+    font-family:Helvetica;
+    font-size:22px
+}
+
+.button{
+    background-color:#1e656d;
+    color:#FFFFFF;
+    font-family:Helvetica;
+    border-radius: 50px;
+}
+.backGroundPrimary{
+    background-color:#1e656d;
+}
+
+.labels{
+    color:#38300A;
+    text-align:center;
+    font-family:Helvetica;
+    font-size:16px
+}
+
+.vochaNumber{
+    color:#f62a00;
+    text-align:center;
+    font-family:Helvetica
+}
